@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(135deg, #f9f8f8, #e0e0e0);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #2f2d2d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Slight overlay for better text visibility */
+    padding: 40px 20px; 
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+.mobile-menu a {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Responsive for phone */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide desktop nav on mobile */
+    }
+    .mobile-menu {
+        display: block; /* Show mobile menu */
+    }
+}
+ul {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes the default padding */
+}
+
